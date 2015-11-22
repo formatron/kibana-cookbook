@@ -17,7 +17,7 @@ end
 
 kibana_tar_gz = File.join cache, 'kibana.tar.gz' 
 kibana_tar_gz_url = "https://download.elastic.co/kibana/kibana/kibana-#{version}-linux-x64.tar.gz"
-kibana_linked_dir = "#{kibana_install_dir}-#{kibana_version}"
+kibana_linked_dir = "#{kibana_install_dir}-#{version}"
 
 directory kibana_linked_dir do
   recursive true
