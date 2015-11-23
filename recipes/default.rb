@@ -1,5 +1,6 @@
 version = node['formatron_kibana']['version']
 checksum = node['formatron_kibana']['checksum']
+params = node['formatron_kibana']['params']
 
 cache = Chef::Config[:file_cache_path]
 kibana_group = 'kibana'
@@ -41,6 +42,15 @@ end
 
 link kibana_install_dir do
   to kibana_linked_dir
+  notifies :restart, 'service[kibana]', :delayed
+end
+
+template File.join(kibana_linked_dir, 'config/kibana.yml') do
+  owner kibana_user
+  group kibana_group
+  variables(
+    params: params || {}
+  )
   notifies :restart, 'service[kibana]', :delayed
 end
 
