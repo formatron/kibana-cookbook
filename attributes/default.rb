@@ -1,3 +1,3 @@
-default['formatron_kibana']['version'] = '4.2.1'
-default['formatron_kibana']['checksum'] = 'fc0aa94ae4eeb9460c064f4e6a8bb86752589dbd1acaa27e226e52e8cd462520'
+default['formatron_kibana']['version'] = '4.3.0'
+default['formatron_kibana']['checksum'] = '3c6236457b2193fa4edee2445b111f19efb1fb5918f9939e117287d2e3f5a23f'
 default['formatron_kibana']['params'] = {}
