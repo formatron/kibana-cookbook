@@ -1,3 +1,6 @@
 name 'formatron_kibana'
 version '0.1.0'
+description 'Formatron Kibana cookbook'
+source_url 'https://github.com/formatron/kibana-cookbook'
+issues_url 'https://github.com/formatron/kibana-cookbook/issues'
 supports 'ubuntu'
